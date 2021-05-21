@@ -52,10 +52,10 @@ def opponent_ai():
         opponent.top += opponent_speed
     if opponent.bottom > ball.y:
         opponent.top -= opponent_speed
-    if player.top <= 0:
-        player.top = 0
-    if player.bottom >= screen_height:
-        player.bottom = screen_height
+    if opponent.top <= 0:
+        opponent.top = 0
+    if opponent.bottom >= screen_height:
+        opponent.bottom = screen_height
 
 
 def ball_restart():
